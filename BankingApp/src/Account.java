@@ -21,20 +21,15 @@ public class Account {
 
     public void deposit(double amount) {
         this.balance += amount;
-        displayAccountInfo();
-
     }
 
     public void withdraw(double amount) {
         this.balance -= amount;
-        displayAccountInfo();
     }
 
     public void displayAccountInfo() {
         System.out.println("AccountNumber: " + accountNumber + "  Name: " + name + "  Balance: " + balance);
     }
-
-
 
     public static void main(String[] args) {
 

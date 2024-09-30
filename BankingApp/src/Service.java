@@ -23,6 +23,7 @@ public class Service {
         try {
             Account account = getAccount(accountNumber);
             Account.list.remove(account);
+            System.out.println("Account Number: " + accountNumber + " Successfully Closed");
         } catch (NoSuchElementException e) {
             System.out.println("Not Found AccountNumber: " + accountNumber);
         } catch (Exception e) {

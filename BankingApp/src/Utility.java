@@ -16,12 +16,7 @@ public class Utility {
     public static void closeAccount() {
         System.out.println("Enter Account Number");
         int accountNumber = input.nextInt();
-        try {
-            Service.deleteAccount(accountNumber);
-            System.out.println("Account Number: " + accountNumber + " Successfully Closed");
-        } catch (Exception e) {
-            System.out.println(e.toString());
-        }
+        Service.deleteAccount(accountNumber);
     }
 
     public static void displayAccountInfo() {
